@@ -275,7 +275,7 @@ header a:hover{color: #fff;}
     /*border: 1px solid black;*/
 }
 .service .container .box .content p{
-    text-align: center;
+    text-align: justify;
 }
 
 /** Info*/
@@ -313,6 +313,7 @@ header a:hover{color: #fff;}
 .info .imgBox .content h1{
     font-size: 1.6rem;
     font-weight: 300;
+    padding:0 20px;
 }
 .info .imgBox .content a{
     border: 2px solid #ddd;
@@ -322,6 +323,7 @@ header a:hover{color: #fff;}
     color: #111;
     transition: .2s;
 }
+
 .info .imgBox .content a:hover{
     background: rgb(238, 238, 238,0.4);
     letter-spacing: 1px;
@@ -375,7 +377,7 @@ header a:hover{color: #fff;}
     flex-direction: column;
     border: 1px solid #ddd;
     box-shadow: 0px 0px 9px 5px rgba(0,0,0,0.1);
-    height: 400px;
+   
     transition: .3s;
     
 }
@@ -394,7 +396,7 @@ header a:hover{color: #fff;}
 }
 .clients .container .box .content{
     position: relative;
-    padding: 15px;
+    padding: 0 15px;
 }
 .clients .container .box .content img{
     width: 40px;
@@ -403,7 +405,8 @@ header a:hover{color: #fff;}
 
 .clients .container .box .content p{
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
+    text-align: justify;
 }
 .clients .container .box .content h3{
     text-align: center;
@@ -411,7 +414,7 @@ header a:hover{color: #fff;}
     font-size: 1.1em;
     color: rgba(255,165,0);
 }
-.clients .container .box .content h6{color: var(--bg-span);text-transform: uppercase;font-style: italic;}
+.clients .container .box .content h6{color: var(--bg-span);text-transform: uppercase;font-style: italic;padding-bottom: 10px;}
 
 /**Parcerias*/
 .parcerias{
@@ -449,17 +452,20 @@ header a:hover{color: #fff;}
     width: 700px;
 }
 .adic .content .text{
-    position: absolute;
     flex-direction: column;
-    left: -30px;
+    padding: 0 30px;
 }
 .adic .content .text h2{
+    position: relative;
     text-align: center;
-    color: #fff;
+    color: #eee;
+    font-size: 1.8em;
 }
 .adic .content .text p{
-   padding-top: 20px;
+    color: #222;
+    font-size: 1.2em;
 }
+
 
 /**Rodapé*/
 .footer{
@@ -484,6 +490,7 @@ header a:hover{color: #fff;}
 
 .footer .box h4{
     position: relative;
+    text-transform: capitalize;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 25px;
@@ -499,8 +506,13 @@ header a:hover{color: #fff;}
     height: 2px;
     box-sizing: border-box;
 }
+.footer ul li{
+    color: #fff;
+    margin-bottom: 10px;
+}
 .footer ul li a{
     display: block;
+    text-transform: capitalize;
     font-size: 16px;
     text-decoration: none;
     margin-bottom: 10px;
@@ -521,10 +533,7 @@ header a:hover{color: #fff;}
 }
 .copyright p{
     font-size: 16px;
-}
-.copyright a{
-    text-decoration: none;
-    color: #000;
+    text-transform: capitalize;
 }
 
 /**Responsividade*/
